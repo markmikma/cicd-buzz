@@ -1,6 +1,8 @@
 import os
 from flask import Flask
-from buzz import generator
+import sys
+sys.path.append('src/buzz')
+import generator
 
 app = Flask(__name__)
 
